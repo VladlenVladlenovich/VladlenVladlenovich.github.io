@@ -713,6 +713,7 @@ button {
   height: 147px;
 }
 .page-header__nav {
+  margin-right: 50px;
   display: inline-block;
   white-space: nowrap;
 }
