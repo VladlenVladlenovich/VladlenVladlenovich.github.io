@@ -833,6 +833,7 @@ textarea {
 }
 .contacts-item--column {
   flex-direction: column;
+  width: calc(33.3333% - 50px);
 }
 .contacts-item__img {
   display: flex;
@@ -933,7 +934,7 @@ textarea {
   justify-content: space-between;
 }
 .subscribe__social-media {
-  margin-right: 85px;
+  margin-right: 110px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -972,16 +973,17 @@ textarea {
 .subscribe__docs,
 .subscribe__creating {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .subscribe__docs {
-  min-width: 384px;
+  width: 384px;
   align-self: flex-end;
 }
 .subscribe__creating {
-  min-width: 280px;
+  width: 280px;
   align-self: flex-end;
+  align-items: end;
 }
 .subscribe__creating-link {
   display: flex;
@@ -1774,7 +1776,7 @@ textarea {
   display: block;
   position: absolute;
   align-self: center;
-  width: 100%;
+  max-width: 100%;
 }
 .events-preview__background::before {
   content: "";
@@ -1889,7 +1891,6 @@ textarea {
 .page-header__nav {
   margin-right: 65px;
   display: inline-block;
-  white-space: nowrap;
 }
 .page-header__nav-link {
   margin: 0 25px;
@@ -1916,6 +1917,7 @@ textarea {
   font-weight: 400;
 }
 .main-header__text {
+  box-sizing: border-box;
   padding-left: 40px;
   padding-right: 40px;
   text-align: center;
