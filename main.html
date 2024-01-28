@@ -17,7 +17,7 @@
     <div class="page-header__container">
 
       <a href="index.html" class="page-header__logo">
-        <svg class="page-header__logo-img" width="202" height="147">
+        <svg class="page-header__logo-icon" width="202" height="147">
           <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
@@ -27,9 +27,24 @@
         <a href="/blog-listing.html#" class="page-header__nav-link">Блог</a>
         <a href="/about.html#" class="page-header__nav-link">О нас</a>
         <a href="/contacts.html#" class="page-header__nav-link">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="page-header__btn-wrapper">
-        <a href="#" class="btn page-header__user-btn">Войти</a>
+        <a href="#" class="page-header__user-btn">Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
 
     </div>
@@ -64,7 +79,7 @@
           <h2 class="about__section-title section-title">О нас</h2>
 
           <div class="about__block">
-            <h3 class="about__title">Проект "Millennials"</h3>
+            <h3 class="about__title">Проект «Millennials»</h3>
             <p class="about__text">
               Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и желанием сделать мир лучше, проявить себя. У них есть талант и стремление, у нас возможность помочь им воплотить их мечту в реальность.
             </p>
@@ -75,110 +90,112 @@
               <img class="about__img" src="assets/images/about.jpg" alt="first_block" />
             </picture>
 
+            <h3 class="about__title about__title--w868 about__title--2">Мы предоставляем площади для вашего мероприятия</h3>
+            <p class="about__text about__text2">
+              И оказываем помощь с организацией, если вам это нужно.
+              <br> Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.
+            </p>
+
             <picture class="about__picture2">
               <img class="about__img" src="assets/images/about2.jpg" alt="second_block" />
             </picture>
-            <h3 class="about__title about__title--w868 about__title--2">Мы предоставляем площади для вашего мероприятия</h3>
-            <p class="about__text about__text--2">
-              И оказываем помощь с организацией, если вам это нужно. Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.
-            </p>
           </div>
-
 
           <div class="about__block3">
             <picture class="about__picture3">
               <img class="about__img2" src="assets/images/about3.jpg" alt="third_block">
             </picture>
             <div class="about__block3-wrapper">
-              <p class="about__text about__text--mb150">
-                Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.
+              <p class="about__text about__text3">
+                Мы уже успешно организовали и провели более 100 проектов.
+                <br> Посмотрите, как это было классно.
               </p>
+              <a href="#" class="about__link link">
+                <span class="link__name">Смотреть</span>
+                <svg class="arrow about__link-icon link__icon" width="91" height="60">
+                  <use xlink:href="assets/icons/symbols.svg#link"></use>
+                </svg>
+              </a>
             </div>
           </div>
-
-          <a href="#" class="about__link link">
-            <span class="link__name">Смотреть</span>
-            <svg class="about__link-icon link__icon" width="91" height="60">
-              <use xlink:href="assets/icons/symbols.svg#link"></use>
-            </svg>
-          </a>
-
         </div>
       </section>
 
 
       <section class="offers home__offers"></section>
       <section class="events-preview home__events-preview">
-        <svg class="events-preview__background" width="1920" height="1236">
-          <use xlink:href="assets/icons/symbols.svg#background_white"></use>
-        </svg>
+        <!--<svg class="events-preview__background" width="1920" height="1236">
+        <use xlink:href="assets/icons/symbols.svg#background_white"></use>
+    </svg>
+-->
+        <div class="events-preview__background">
 
-        <div class="events-preview__container">
-          <h2 class="events-preview__title section-title">Мероприятия</h2>
-          <section class="listing events__listing">
-            <div class="listing__events-list listing__events-list--mb130">
-              <!-- prettier-ignore -->
+          <div class="events-preview__container">
+            <h2 class="events-preview__title section-title">Мероприятия</h2>
+            <section class="listing events__listing events-preview__listing">
+              <div class="listing__events-list listing__events-list--mb events-preview__events-list">
+                <!-- prettier-ignore -->
 
-              <article class="event-card listing__event-card">
-                <a href="#" class="event-card__link">
-                  <picture class="event-card__picture">
-                    <img src="assets/images/events/Nirvana.jpg" alt="nirvana" class="event-card__img" />
-                  </picture>
+                <article class="event-card listing__event-card">
+                  <a href="#" class="event-card__link">
+                    <picture class="event-card__picture">
+                      <img src="assets/images/events/Nirvana.jpg" alt="nirvana" class="event-card__img" />
+                    </picture>
 
-                  <h2 class="event-card__title">Собираемся и слушаем альбом Nirvana</h2>
-                  <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
-                  <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
-                </a>
-              </article>
-              <article class="event-card listing__event-card">
-                <a href="#" class="event-card__link">
-                  <picture class="event-card__picture">
-                    <img src="assets/images/events/HowStuffWorks.jpg" alt="stuff" class="event-card__img" />
-                  </picture>
+                    <h2 class="event-card__title">Собираемся и слушаем альбом Nirvana</h2>
+                    <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+                    <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
+                  </a>
+                </article>
+                <article class="event-card listing__event-card">
+                  <a href="#" class="event-card__link">
+                    <picture class="event-card__picture">
+                      <img src="assets/images/events/HowStuffWorks.jpg" alt="stuff" class="event-card__img" />
+                    </picture>
 
-                  <h2 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h2>
-                  <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
-                  <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
-                </a>
-              </article>
-              <article class="event-card listing__event-card">
-                <a href="#" class="event-card__link">
-                  <picture class="event-card__picture">
-                    <img src="assets/images/events/Sade.jpg" alt="sade" class="event-card__img" />
-                  </picture>
+                    <h2 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h2>
+                    <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+                    <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
+                  </a>
+                </article>
+                <article class="event-card listing__event-card">
+                  <a href="#" class="event-card__link">
+                    <picture class="event-card__picture">
+                      <img src="assets/images/events/Sade.jpg" alt="sade" class="event-card__img" />
+                    </picture>
 
-                  <h2 class="event-card__title">Вечер | The Best of Sade</h2>
-                  <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
-                  <time datetime="2022-12-16T20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
-                </a>
-              </article>
-            </div>
-          </section>
-
-          <section class="events-preview__nav">
-            <div class="events-preview__arrow-right">
-              <svg class="arrow_icon" width="92" height="62">
-                <use xlink:href="assets/icons/symbols.svg#arrow-left"> </use>
-              </svg>
-            </div>
-
-            <section class="events-preview__strip">
-              <div class="events-preview__stripper events-preview__stripper--disabled"></div>
-              <div class="events-preview__stripper events-preview__stripper--disabled"></div>
-              <div class="events-preview__stripper "></div>
-              <div class="events-preview__stripper events-preview__stripper--disabled"></div>
-              <div class="events-preview__stripper events-preview__stripper--disabled"></div>
+                    <h2 class="event-card__title">Вечер | The Best of Sade</h2>
+                    <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+                    <time datetime="2022-12-16T20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
+                  </a>
+                </article>
+              </div>
             </section>
 
-            <div class="events-preview__arrow-left">
-              <svg class="arrow_icon" width="92" height="62">
-                <use xlink:href="assets/icons/symbols.svg#link"></use>
-              </svg>
-            </div>
-          </section>
+            <section class="events-preview__slider">
+              <div class="events-preview__arrow-right">
+                <svg class="arrow events-preview__arrow-icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#arrow-left"> </use>
+                </svg>
+              </div>
 
-          <a href="#" class="listing__link link events-preview__link-pre">Смотреть все</a>
+              <section class="events-preview__strip">
+                <div class="events-preview__stripper events-preview__stripper--disabled"></div>
+                <div class="events-preview__stripper events-preview__stripper--disabled"></div>
+                <div class="events-preview__stripper "></div>
+                <div class="events-preview__stripper events-preview__stripper--disabled"></div>
+                <div class="events-preview__stripper events-preview__stripper--disabled"></div>
+              </section>
 
+              <div class="events-preview__arrow-left">
+                <svg class="arrow events-preview__arrow-icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#link"></use>
+                </svg>
+              </div>
+            </section>
+
+            <a href="#" class="link link events-preview__link">Смотреть все</a>
+          </div>
         </div>
       </section>
 
@@ -207,7 +224,7 @@
                 <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
 
                 <div class="article-card__arrow arrow">
-                  <svg class="arrow_icon" width="92" height="62">
+                  <svg class="arrow arrow_icon" width="92" height="62">
                     <use xlink:href="assets/icons/symbols.svg#link"> </use>
                   </svg>
                 </div>
@@ -230,7 +247,7 @@
                 <h4 class="article-card__title">Выставка VR в Томске</h4>
 
                 <div class="article-card__arrow arrow">
-                  <svg class="arrow_icon" width="92" height="62">
+                  <svg class="arrow arrow_icon" width="92" height="62">
                     <use xlink:href="assets/icons/symbols.svg#link"> </use>
                   </svg>
                 </div>
@@ -253,7 +270,7 @@
                 <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
 
                 <div class="article-card__arrow arrow">
-                  <svg class="arrow_icon" width="92" height="62">
+                  <svg class="arrow arrow_icon" width="92" height="62">
                     <use xlink:href="assets/icons/symbols.svg#link"> </use>
                   </svg>
                 </div>
@@ -328,6 +345,8 @@
         </div>
         <div class="contacts__text-wrapper">
           <p class="contacts__text">Просто делайте, что нравится,</p>
+          <p class="contacts__text-1170-1">Просто делайте,</p>
+          <p class="contacts__text-1170-2">что нравится,</p>
           <p class="contacts__text2">а мы вам поможем</p>
         </div>
       </section>
@@ -366,12 +385,8 @@
         </form>
       </div>
 
-      <div class="subscribe__links">
-        <div class="subscribe__docs">
-          <a href="#" class="subscribe__confident">Политика конфиденциальности</a>
-          <a href="#" class="subscribe__cookies">Cookies</a>
-        </div>
 
+      <div class="subscribe__links-wrapper">
         <div class="subscribe__social-media">
           <a href="#" class="subscribe__sticky-btn">
             <svg class="subscribe__insta-logo" width="24" height="24">
@@ -385,15 +400,22 @@
           </a>
         </div>
 
-        <div class="subscribe__creating">
-          <a href="#" class="subscribe__creating-link">Создание и продвижение</a>
-          <svg class="subscribe_creating-icon" width="56" height="17">
-            <use xlink:href="assets/icons/symbols.svg#tagree"></use>
-          </svg>
+        <span class="page-footer__editor-label">© Millennials 2022</span>
+
+        <div class="subscribe__links">
+          <div class="subscribe__docs">
+            <a href="#" class="subscribe__confident">Политика конфиденциальности</a>
+            <a href="#" class="subscribe__cookies">Cookies</a>
+          </div>
+
+          <div class="subscribe__creating">
+            <a href="#" class="subscribe__creating-link">Создание и продвижение</a>
+            <svg class="subscribe_creating-icon" width="56" height="17">
+              <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+            </svg>
+          </div>
         </div>
       </div>
-
-
     </div>
   </footer>
   <div class="pp">

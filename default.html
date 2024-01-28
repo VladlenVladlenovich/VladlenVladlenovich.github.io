@@ -17,7 +17,7 @@
     <div class="page-header__container">
 
       <a href="index.html" class="page-header__logo">
-        <svg class="page-header__logo-img" width="202" height="147">
+        <svg class="page-header__logo-icon" width="202" height="147">
           <use xlink:href="assets/icons/symbols.svg#logo"></use>
         </svg>
       </a>
@@ -27,9 +27,24 @@
         <a href="/blog-listing.html#" class="page-header__nav-link">Блог</a>
         <a href="/about.html#" class="page-header__nav-link">О нас</a>
         <a href="/contacts.html#" class="page-header__nav-link">Контакты</a>
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">
+            Александр С.
+          </a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="page-header__btn-wrapper">
-        <a href="#" class="btn page-header__user-btn">Войти</a>
+        <a href="#" class="page-header__user-btn">Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle"></button>
       </div>
 
     </div>
@@ -101,12 +116,8 @@
         </form>
       </div>
 
-      <div class="subscribe__links">
-        <div class="subscribe__docs">
-          <a href="#" class="subscribe__confident">Политика конфиденциальности</a>
-          <a href="#" class="subscribe__cookies">Cookies</a>
-        </div>
 
+      <div class="subscribe__links-wrapper">
         <div class="subscribe__social-media">
           <a href="#" class="subscribe__sticky-btn">
             <svg class="subscribe__insta-logo" width="24" height="24">
@@ -120,15 +131,22 @@
           </a>
         </div>
 
-        <div class="subscribe__creating">
-          <a href="#" class="subscribe__creating-link">Создание и продвижение</a>
-          <svg class="subscribe_creating-icon" width="56" height="17">
-            <use xlink:href="assets/icons/symbols.svg#tagree"></use>
-          </svg>
+        <span class="page-footer__editor-label">© Millennials 2022</span>
+
+        <div class="subscribe__links">
+          <div class="subscribe__docs">
+            <a href="#" class="subscribe__confident">Политика конфиденциальности</a>
+            <a href="#" class="subscribe__cookies">Cookies</a>
+          </div>
+
+          <div class="subscribe__creating">
+            <a href="#" class="subscribe__creating-link">Создание и продвижение</a>
+            <svg class="subscribe_creating-icon" width="56" height="17">
+              <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+            </svg>
+          </div>
         </div>
       </div>
-
-
     </div>
   </footer>
 </body>
