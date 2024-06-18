@@ -411,6 +411,7 @@ textarea {
   cursor: pointer;
 }
 span.error {
+  display: block;
   color: #bc3324;
   font-size: 14px;
 }
@@ -3105,7 +3106,7 @@ button.swiper-pagination-bullet {
   display: flex;
   width: 100%;
   height: 49px;
-  margin-bottom: 15px;
+  margin-bottom: 28px;
 }
 .subscribe__field-wrapper {
   width: 100%;
@@ -3137,6 +3138,9 @@ button.swiper-pagination-bullet {
   font-weight: 100;
   line-height: 1.3;
   transition: background-color 0.2s;
+}
+.subscribe__check {
+  flex-direction: column;
 }
 .subscribe__links-wrapper {
   display: grid;
@@ -3438,12 +3442,6 @@ button.swiper-pagination-bullet {
   border-right: 2px solid #ffffff;
   border-bottom: 2px solid #ffffff;
   transform: rotate(45deg);
-}
-.scene__table {
-  fill: black;
-}
-.scene__table--red {
-  fill: red;
 }
 .event-card {
   display: flex;
@@ -5578,7 +5576,7 @@ button.swiper-pagination-bullet {
     font-size: 12px;
   }
   .subscribe__check {
-    margin-top: 80px;
+    margin-top: 95px;
     display: flex;
   }
   .subscribe__links-wrapper {
@@ -6104,9 +6102,6 @@ button.swiper-pagination-bullet {
     margin-bottom: 65px;
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  .page-footer__editor-label {
-    margin-bottom: 8.5px;
   }
   .page-footer__nav {
     margin-bottom: 62px;
